@@ -1,0 +1,9 @@
+###
+POST localhost:8080/api/client-order
+Content-Type: application/json
+
+{
+  "orderName": "1234",
+  "clientId": 10,
+  "to": "hammermantuts@gmail.com"
+}

@@ -10,5 +10,19 @@ spring:
           auth: true
           starttls:
             enable: true
+  datasource:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  r2dbc:
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
+  h2:
+    console:
+      enabled: true
+
 server:
   port: 8080

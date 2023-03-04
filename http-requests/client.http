@@ -1,0 +1,7 @@
+###
+GET localhost:8080/api/client
+Content-Type: application/json
+
+###
+GET localhost:8080/api/client-order
+Content-Type: application/json
