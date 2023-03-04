@@ -29,7 +29,7 @@ class ClientServiceImpl(
                 it.id!!,
                 it.name,
                 it.age,
-                addressDto = addressRepository.findAddressByClientId(it.id!!)
+                address = addressRepository.findAddressByClientId(it.id!!)
                     .let { a -> AddressDto(a.id!!, a.street, a.city, a.state, a.zip) }
             )
         }

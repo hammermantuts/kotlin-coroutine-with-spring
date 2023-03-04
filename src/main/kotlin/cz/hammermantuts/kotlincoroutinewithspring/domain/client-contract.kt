@@ -4,7 +4,7 @@ data class ClientDto(
     val id: Long,
     val name: String,
     val age: Int,
-    val addressDto: AddressDto? = null
+    val address: AddressDto? = null
 )
 
 data class AddressDto(

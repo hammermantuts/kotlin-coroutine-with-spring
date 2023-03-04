@@ -15,6 +15,7 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -26,6 +27,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j")
     implementation("ch.qos.logback:logback-classic")
+
+    testImplementation("io.mockk:mockk:1.13.4")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
 
     runtimeOnly("com.h2database:h2")
     runtimeOnly("io.r2dbc:r2dbc-h2")
